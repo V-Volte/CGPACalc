@@ -12,7 +12,7 @@
 
 <body>
     <h1 class="heading" id='heading'>CGPA Calculator</h1>
-    <input type="text" name="No. of subjects" id="subjectCount" class="textbox" placeholder="Number of subjects">
+    <input type="text" inputmode="numeric" pattern="[0-9]*" name="No. of subjects" id="subjectCount" class="textbox" placeholder="Number of subjects">
     <button class="button" onclick="generateTable()" id='initialise'>Initialise</button>
     <div class="boxgrid">
         <div class='griddiv' id='subjects'>

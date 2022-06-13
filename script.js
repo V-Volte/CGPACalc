@@ -62,6 +62,8 @@ function generateTable() {
         let gradeTextField = createGradeSelector(i);
         document.getElementById("grades").appendChild(gradeTextField);
         let creditsTextField = createTextField(i, "credits");
+        creditsTextField.inputMode = "numeric";
+        creditsTextField.pattern = "[0-9]*";
         document.getElementById("credits").appendChild(creditsTextField);
     }
     if (!hasButton) {
