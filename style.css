@@ -1,0 +1,89 @@
+:root {
+    --bg-color: rgb(252, 250, 240);
+    --bg-color-dark: rgb(50, 50, 50);
+    --fg-color: rgb(50, 50, 50);
+    --fg-color-dark: rgb(225, 225, 225);
+}
+
+.textbox {
+    border: 2px solid var(--fg-color-dark);
+    color: var(--fg-color-dark);
+    background-color: var(--bg-color-dark);
+    border-radius: 2px;
+    padding: 10px;
+    font-size: inherit;
+    width: 10vw;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.textbox:active {
+    border: 2px solid black;
+}
+
+.textbox:current {
+    border: 2px solid var(--bg-color-dark);
+}
+
+body {
+    background-color: var(--bg-color-dark);
+    color: var(--fg-color-dark);
+    font-family: Inter, serif;
+    padding: 20px;
+    font-size: 16px;
+}
+
+* {
+    font-family: Inter, serif;
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 7em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.griddiv {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.boxgrid {
+    display: grid;
+    grid-column: 1/3;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+}
+
+.button {
+    padding: 10px 20px 10px 20px;
+    font-size: inherit;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(210, 100, 40);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px;
+    border: 2px solid rgb(210, 100, 40);
+    margin-left: 0;
+}
+
+.button:hover {
+    background-color: rgb(180, 80, 20);
+    border: 2px solid rgb(180, 80, 20);
+}
+
+.button:active {
+    background-color: rgb(150, 60, 10);
+    border: 2px solid rgb(150, 60, 10);
+}
+
+.orange {
+    color: rgb(210, 100, 40);
+}
+
+select option {
+    padding: 10px;
+}
